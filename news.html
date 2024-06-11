@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="main-nav container flex">
+       <a href="#" class="company-logo" onclick="reload()">
+         <img src="news logo.png" alt="company-logo">
+       </a>
+
+       <div class="nav-links">
+         <ul class="flex" id="nav-lists">
+           <li class="nav-items hover-link" id="ipl" onclick="navitemclick('ipl')">IPL</li>
+           <li class="nav-items hover-link" id="finance"  onclick="navitemclick('finance')">Finance</li>
+           <li class="nav-items hover-link" id="politics"  onclick="navitemclick('politics')">Politics</li>
+           <li class="nav-items hover-link"  id="searched-item"  onclick="navitemclick('seached')"></li>
+         </ul>
+       </div>
+
+       <div class="search-bar flex">
+          <input type="text" class="news-input" placeholder="eg. Science" id="search-input">
+          <button class="search-button" id="search-button">Search</button>
+       </div>
+
+
+    </div>
+  </nav>
+
+  <main>
+    <div class="cards-container container flex" id="cards-container">
+      
+
+    </div>
+  </main>
+
+  <template id="templet-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="news logo.png" alt="news-image" id="news-img">
+      </div>
+      <div class="card-content">
+         <h3 id="news-title" class="news-title">this is the title</h3>
+         <h6 class="news-source" id="news-source">end gadget : 31/06/2023</h6>
+         <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ipsum. Consequatur id delectus perferendis enim, eaque sint saepe pariatur praesentium.</p>
+      </div>
+   </div>
+
+
+  </template>
+
+
+  
+</body>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* // global variables */
+
+:root{
+    --primary-text-color :  red;/* #183b56;*/
+    --secondary-text-color : green;/*#577592;*/
+    --accent-text-color : #2294ed;
+    --accent-dark-color : #1d69a3;
+    --padding-inline-section : 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color) ;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-orientation: none;  
+    /* underline jail */
+}
+
+ul {
+    list-style: none;
+    /* dot jatil */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin-inline : auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.company-logo img{
+    width: 129px;
+}
+
+.nav-links ul{
+    gap : 16px;
+
+}
+
+
+
+.nav-items.active{
+    color: var(--accent-text-color);
+}
+
+.hover-link{
+    cursor: pointer;
+
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+.hover-link:active {
+    color: yellow;
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+
+}
+
+.news-input{
+    width: 200px;
+    height: 100%;   /*parent chi height:  milte;*/
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bb08e2;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button{
+    background-color: var(--accent-text-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover{
+    background-color: var(--accent-dark-color);
+}
+
+main{
+    padding-block : 20px;
+    margin-top: 120px;
+}
+
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: start;
+}
+
+.card{
+    width: 365px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ceff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ceff;
+    background-color: #f9fdff;
+    transform: translateY(-2px); 
+    /* 2 px vrti jail */
+}
+
+.card-header img{
+     width: 100%;  /*// parent la match krte */
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 12px;
+}
+
+.news-source{
+  margin-block: 12px;
+  /* top v bottom la detat */
+}
